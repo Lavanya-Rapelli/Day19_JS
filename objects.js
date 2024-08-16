@@ -14,7 +14,7 @@ person.email = 'alice@example.com'; // Adding a property
 person.age = 31; // Modifying a property
 delete person.greet; // Deleting a property
 
-console.log(person.age); // Alice
+// console.log(person.age); // Alice
 
 const car = {
     brand: 'Toyota',
@@ -25,3 +25,23 @@ const car = {
   };
   car.start();
 
+  function findFrequency(arr) {
+    const frequency = {};
+  
+    for (let i = 0; i < arr.length; i++) {
+      const num = arr[i];
+      if (frequency[num]) {
+        frequency[num]++;
+      } else {
+        frequency[num] = 1;
+      }
+    }
+  
+    return frequency;
+  }
+  
+  // Example usage:
+  const arr = [1, 2, 3, 2, 3];
+  const frequency = findFrequency(arr);
+  console.log(frequency); // { '1': 1, '2': 2, '3': 2 }
+  

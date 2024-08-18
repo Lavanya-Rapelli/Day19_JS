@@ -45,3 +45,18 @@ const car = {
   const frequency = findFrequency(arr);
   console.log(frequency); // { '1': 1, '2': 2, '3': 2 }
   
+
+  function mapCharacters(N) {
+    let str = "abcdefghijklmnopqrstuvwxyz"
+    let obj = {};
+    for(let i = 0; i < N; i++){
+        obj[str[i]] = i+1;
+    }
+    for(let key in obj){
+        console.log(key +"-"+ obj[key]);
+    } 
+}
+
+
+mapCharacters(5)
+

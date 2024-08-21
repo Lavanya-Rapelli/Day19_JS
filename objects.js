@@ -60,3 +60,4 @@ const car = {
 
 mapCharacters(5)
 
+
